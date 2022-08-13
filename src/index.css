@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +10,136 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.rock {
+  background-color: #945151;
+}
+
+.ghost {
+  background-color: #f7f7f7;
+}
+
+.electric {
+  background: #ffffa1 radial-gradient(#ffffa1, #efef89);
+}
+
+.bug {
+  background: #F6D6A7 radial-gradient(#f9e2bc, #f5c379);
+}
+
+.poison {
+  background: #e0a7f6 radial-gradient(#f2d3fd, #e5a5ff);
+}
+
+.normal {
+  background: #F4F4F4 radial-gradient(#fbfbfb, #dbdbdb);
+}
+
+.fairy {
+  background-color: #ffc0cbdc;
+}
+
+.fire {
+  background: #FBE3DF radial-gradient(#FBE3DF, #faafa1);
+}
+
+.grass {
+  background: #E2F9E1 radial-gradient(#E2F9E1, #a7e2a5);
+}
+
+.water {
+  background: #E0F1FD radial-gradient(#E0F1FD, #a1d7fd);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 0.5rem;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  margin: 0.3rem;
+  border: 1px solid #ffffff;
+  border-radius: 0.2rem;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 3px 10px #00000017;
+}
+
+.thumb-container:hover {
+  transform: scale(1.04);
+  border: 1px solid #ffffffb7;
+  box-shadow: 0 3px 5px #00000030;
+}
+
+h3 {
+  margin-bottom: 0.2rem;
+  text-transform: capitalize;
+}
+
+.thumb-container .number {
+  border-radius: 1rem;
+  padding: 0.3rem 0.5rem;
+  background-color: #ffffff4d;
+  font-weight: 700;
+  border: 1px solid #a5a5a54d;
+}
+
+.thumb-container img {
+  width: 120px;
+  height: 120px;
+}
+
+.thumb-container small {
+  text-transform: capitalize;
+}
+
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.detail-wrapper button {
+  color: rgb(22, 22, 22);
+  padding: .5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  background-color: #0000002f;
+}
+
+.load-more {
+  background: #f5f5f5 linear-gradient(#f5f5f5, #f1f1f1) repeat-x;
+  border-radius: 2px;
+  border: 1px solid #c6c6c6;
+  color: #444;
+  padding: 0.5rem 1.5rem;
+  min-width: 50%;
+  margin-top: 1rem;
 }
